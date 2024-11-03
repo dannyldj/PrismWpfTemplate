@@ -17,6 +17,6 @@ public class ExampleModule(IRegionManager regionManager) : IModule
 
     public void OnInitialized(IContainerProvider containerProvider)
     {
-        regionManager.RequestNavigate(RegionNames.MainRegion, nameof(Views.Example));
+        regionManager.RequestNavigate(RegionNames.MainRegion, "Example");
     }
 }
